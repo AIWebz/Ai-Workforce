@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Workforce Dashboard</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <div class="sidebar">
+    <h3>Workspace</h3>
+    <ul>
+      <li>Projects</li>
+      <li>AI Employees</li>
+      <li>Workforce</li>
+      <li>Reports</li>
+      <li>Settings</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <h2>Website Preview</h2>
+    <iframe id="sitePreview" style="width:100%;height:400px;"></iframe>
+    <button class="publish" onclick="publishWebsite()">Publish Website</button>
+    
+    <div class="chat">
+      <input id="chatInput" placeholder="Tell your AI workforce what to do">
+      <button onclick="sendCommand()">Send</button>
+    </div>
+  </div>
+
+  <div class="rightPanel">
+    <h3>AI Activity</h3>
+    <div id="activityFeed"></div>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+<script src="ai/workforce.js"></script>
+<script src="deploy/publish.js"></script>
+</body>
+</html>
