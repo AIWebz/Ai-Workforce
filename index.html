@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Workforce Website Builder</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+  <h1>Build Websites With Your Own AI Workforce</h1>
+  <p>AI employees design, build, and manage your website automatically.</p>
+  <button onclick="startBuilder()">Start Building</button>
+  <button>See How It Works</button>
+</header>
+
+<section class="builder">
+  <h2>Describe the website you want to build</h2>
+  <textarea id="promptBox" placeholder="I want a modern website for my coffee shop with online ordering, a menu page, and a blog."></textarea>
+
+  <div class="employeeSlider">
+    <label>AI Employees</label>
+    <input type="range" min="0" max="10" value="3" id="employeeRange" oninput="updateCost()">
+    <p id="employeeCount">AI Employees: 3</p>
+    <p id="cost">$30/month</p>
+  </div>
+
+  <button onclick="createWebsite()">Generate Website</button>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
